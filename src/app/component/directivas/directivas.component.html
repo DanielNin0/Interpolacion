@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Alumnos</h1>
+    <h2>{{ subtitulo }}</h2>
+
+   
+    <ul class="list-group">
+        <li *ngFor="let estudiante of listaEstudiantes" class="list-group-item" [ngClass]="estudiante.activo ? 'estudianteactivo' : 'estudianteinactivo'">{{ estudiante.nombre }}
+            <button *ngIf="estudiante.activo == false" type="button" class="btn btn-primary">Activar</button>
+        </li>
+    </ul>
+
+    
+</div>
+

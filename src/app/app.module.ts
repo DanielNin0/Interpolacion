@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { DirectivasComponent } from './component/directivas/directivas.component';
+import { DirectivapersonalizadaDirective } from './directive/directivapersonalizada.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DirectivasComponent,
+    DirectivapersonalizadaDirective
   ],
   imports: [
     BrowserModule
